@@ -69,10 +69,3 @@ Bu komut, projeyi derleyip GitHub Pages dalına yükleyecektir.
 3. Değişikliklerinizi commit edin: `git commit -m 'Yeni özellik eklendi'`
 4. Dalınızı uzak depoya itin: `git push origin yeni-ozellik`
 5. Bir Pull Request açın
-
-## Lisans
-
-Bu proje MIT lisansı altında lisanslanmıştır.
-=======
-
->>>>>>> ebf12b04481dfa72b56bdba441d9c6fd9ccabd1c
