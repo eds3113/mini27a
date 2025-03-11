@@ -1,46 +1,74 @@
-# Getting Started with Create React App
+# Topluluk Bağlantı Yöneticisi
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Bu proje, topluluk yönetimi için kullanılan YouTube videoları, Excel şablonları ve diğer önemli bağlantıları kategorilere ayırarak saklayan ve yöneten bir web uygulamasıdır.
 
-## Available Scripts
+## Özellikler
 
-In the project directory, you can run:
+- Bağlantıları üç farklı kategoride saklama: YouTube, Yönetim ve Diğer
+- Kategoriye göre filtreleme
+- Başlık ve açıklamada arama yapabilme
+- Duyarlı ve kullanıcı dostu arayüz
+- GitHub Pages üzerinde ücretsiz barındırma
 
-### `npm start`
+## Nasıl Kullanılır
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Proje, GitHub Pages üzerinde yayımlanmış olarak kullanılabilir:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+```
+https://yourusername.github.io/link-manager
+```
 
-### `npm test`
+Yerel olarak geliştirmek veya çalıştırmak için:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Repoyu klonlayın:
+```
+git clone https://github.com/yourusername/link-manager.git
+```
 
-### `npm run build`
+2. Proje klasörüne gidin ve bağımlılıkları yükleyin:
+```
+cd link-manager
+npm install
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. Geliştirme sunucusunu başlatın:
+```
+npm start
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+4. Tarayıcınızda görüntüleyin:
+```
+http://localhost:3000
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## GitHub Pages'e Deploy Etme
 
-### `npm run eject`
+Projedeki değişiklikleri GitHub Pages'e deploy etmek için:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```
+npm run deploy
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Bu komut, projeyi derleyip GitHub Pages dalına yükleyecektir.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Veri Yönetimi
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Şu anda bağlantılar, kaynak koddaki bir JSON dosyasında (`src/data/links.json`) statik olarak saklanmaktadır. Gerçek bir uygulama için, aşağıdaki seçenekleri değerlendirebilirsiniz:
 
-## Learn More
+1. **GitHub üzerinde JSON dosyasını düzenlemek**: Küçük değişiklikler için, doğrudan GitHub arayüzünden JSON dosyasını düzenleyip commit edebilirsiniz.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+2. **Firebase/Firestore kullanmak**: Daha dinamik bir çözüm için, ücretsiz bir Firebase hesabı oluşturup verileri gerçek zamanlı bir veritabanında saklayabilirsiniz.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+3. **Supabase veya diğer BaaS (Backend as a Service) hizmetleri**: Firebase'e alternatif olarak Supabase gibi çözümler de kullanılabilir.
+
+## Katkıda Bulunma
+
+1. Bu repoyu forklayın
+2. Özellik dalınızı oluşturun: `git checkout -b yeni-ozellik`
+3. Değişikliklerinizi commit edin: `git commit -m 'Yeni özellik eklendi'`
+4. Dalınızı uzak depoya itin: `git push origin yeni-ozellik`
+5. Bir Pull Request açın
+
+## Lisans
+
+Bu proje MIT lisansı altında lisanslanmıştır.
