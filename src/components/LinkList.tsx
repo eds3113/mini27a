@@ -19,7 +19,7 @@ const LinkList: React.FC = () => {
   const [searchTerm, setSearchTerm] = useState<string>('');
 
   // Gösterilecek kartların sayısını ayarla
-  const MAX_VISIBLE_CARDS = 3;
+  const MAX_VISIBLE_CARDS = 4;
 
   // Başlangıçta tüm bağlantıları yükle
   useEffect(() => {
@@ -165,7 +165,7 @@ const LinkList: React.FC = () => {
         {renderCategoryHeader(category)}
         <Box 
           sx={{ 
-            maxHeight: hasScroll ? '380px' : 'auto',
+            maxHeight: hasScroll ? '500px' : 'auto',
             overflow: hasScroll ? 'auto' : 'visible',
             position: 'relative',
             pt: 0.5, // Üstteki kartın tam görünmesi için üst padding ekliyorum
