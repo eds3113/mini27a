@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Topluluk Bağlantı Yöneticisi
 
 Bu proje, topluluk yönetimi için kullanılan YouTube videoları, Excel şablonları ve diğer önemli bağlantıları kategorilere ayırarak saklayan ve yöneten bir web uygulamasıdır.
@@ -72,3 +73,6 @@ Bu komut, projeyi derleyip GitHub Pages dalına yükleyecektir.
 ## Lisans
 
 Bu proje MIT lisansı altında lisanslanmıştır.
+=======
+
+>>>>>>> ebf12b04481dfa72b56bdba441d9c6fd9ccabd1c
